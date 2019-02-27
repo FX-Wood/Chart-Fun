@@ -2,8 +2,9 @@
 <h3>Check out them charts</h3>
 
 <ul>
-    <% surveys.forEach(function(survey)) %>
+    <% surveys.forEach(function(survey) { %>
         <li> 
-            <a href="/detail/<%= survey.DISTINCT"> <%= survey.DISTINCT %> </a>
+            <a href="/detail/<%= survey.DISTINCT %>"> <%= survey.DISTINCT %> </a>
         </li>
+        <% }) %>
 </ul>
