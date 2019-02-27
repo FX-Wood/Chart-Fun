@@ -1,0 +1,9 @@
+<h1>Welcome to Charts Fun</h1>
+<h3>Check out them charts</h3>
+
+<ul>
+    <% surveys.forEach(function(survey)) %>
+        <li> 
+            <a href="/detail/<%= survey.DISTINCT"> <%= survey.DISTINCT %> </a>
+        </li>
+</ul>
